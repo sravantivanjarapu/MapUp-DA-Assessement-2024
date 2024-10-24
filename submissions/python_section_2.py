@@ -154,6 +154,7 @@ def calculate_time_based_toll_rates(df)->pd.DataFrame():
         
         if day in ["Saturday", "Sunday"]:
             return 0.7
+            
         else:
             if time(0, 0) <= start_time < time(10, 0):
                 return 0.8  # Morning rate
