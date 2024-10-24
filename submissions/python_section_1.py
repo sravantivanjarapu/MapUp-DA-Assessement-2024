@@ -257,7 +257,7 @@ def time_check(df) -> pd.Series:
     index = pd.MultiIndex.from_tuples([result[0] for result in results], names=['id', 'id_2'])
     return pd.Series([result[1] for result in results], index=index)
 
-df = pd.read_csv('dataset-2.csv')
+df = pd.read_csv('dataset-1.csv')
 print(time_check(df))
 
    
